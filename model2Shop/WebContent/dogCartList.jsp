@@ -204,12 +204,12 @@
 							${cart.price }
 						</td>
 						<td>
-							<a href="dogCartQtyUp.do?kind=${cart.kind }">
-								▲<img src="images/up.jsp" id="upImage" border=0 />
+							<a href="dogCartQtyUp.do?kind=${cart.kind }" style="text-decoration: none;">
+								🔺
 							</a><br>
 							${cart.qty }<br>
-							<a href="javascript:checkQty('${cart.kind }', ${cart.qty })">
-								▼<img src="images/down.jsp" id="downImage" border=0 />
+							<a href="javascript:checkQty('${cart.kind }', ${cart.qty })" style="text-decoration: none;">
+								🔻
 							</a>
 						</td>
 					</tr>
@@ -220,7 +220,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td colspan="5" style="text-align: center;">
+						<td colspan="6" style="text-align: left;">
 							<input type="submit" value="삭제" formaction="dogCartRemove.do" />
 						</td>
 					</tr>
